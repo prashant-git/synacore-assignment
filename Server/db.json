@@ -1,0 +1,94 @@
+{
+  "people": [
+    {
+      "id": 0,
+      "name": "John"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptops"
+    },
+    {
+      "id": 2,
+      "name": "Mobiles"
+    },
+    {
+      "id": 3,
+      "name": "Speakers"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Lenovo",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "i7 16GB RAM",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "Mac",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "i7 16GB RAM",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "Dell",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "i7 16GB RAM",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "name": "iPhone",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "Snapdragon855 256GB Inbuilt 8GB RAM",
+      "categoryId": 2
+    },
+    {
+      "id": 5,
+      "name": "Pixel",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "Snapdragon855 256GB Inbuilt 8GB RAM",
+      "categoryId": 2
+    },
+    {
+      "id": 6,
+      "name": "OnePlus",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "Snapdragon855 256GB Inbuilt 8GB RAM",
+      "categoryId": 2
+    },
+    {
+      "id": 7,
+      "name": "JBL",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "Good sound output with good bass",
+      "categoryId": 3
+    },
+    {
+      "id": 8,
+      "name": "Boss",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "Good sound output with good bass",
+      "categoryId": 3
+    },
+    {
+      "id": 9,
+      "name": "Intex",
+      "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "description": "Good sound output with good bass",
+      "categoryId": 3
+    }
+  ],
+  "productDetails": {
+    "id": 1,
+    "name": "Lenovo",
+    "imageUrl": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+    "description": "Dummy description",
+    "categoryId": 1
+  }
+}
