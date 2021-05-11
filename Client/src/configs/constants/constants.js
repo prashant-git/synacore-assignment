@@ -1,4 +1,4 @@
 export const ROUTE = {
-  dashboard: "/home",
+  dashboard: "/",
   detailsPage: "/details",
 };
