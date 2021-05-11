@@ -7,7 +7,7 @@ import { DetailsPageContainer } from '../dashboard/container/DetailsPageContaine
 const routes = [
   {
     path: ROUTE.dashboard,
-    exact: false,
+    exact: true,
     component: DashboardContainer
   },
   {
