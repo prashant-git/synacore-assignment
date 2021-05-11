@@ -1,13 +1,13 @@
 import React from 'react';
 
-function reducer(state = { vehicle: '' }, action) {
+function reducer(state = { id: '' }, action) {
   switch (action.type) {
     case "SAVE_PRODUCT_ID":
       return {
-        id: action.data.id
+        ...state, id: action.data.id
       };
     default:
-      return "No";
+      return {};
   }
 }
 
