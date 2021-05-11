@@ -28,3 +28,12 @@
   margin: 32px 150px;
   width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .productsContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+  }
+}
