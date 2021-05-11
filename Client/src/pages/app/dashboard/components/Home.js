@@ -12,29 +12,28 @@ export const Home = (props) => {
   const [selectedCategory, setSelectedCategory] = useState(category.id ? category.id : 1)
   const [products, setProducts] = useState()
   const [selectedProduct, setSelectedProduct] = useState()
-
   const dispatch = useDispatch();
 
   useEffect(() => {
     fetchCategories()
-    fetchProducts(category.id)
+    fetchProducts(selectedCategory)
   }, [])
 
   const fetchCategories = async () => {
 
     axios.get("http://localhost:3000/categories").then((response) => {
       setCategories(response.data)
+    }).then((error) => {
+      console.log("error", error)
     })
   }
 
   const fetchProducts = (categoryId) => {
-    try {
-      axios.get(`http://localhost:3000/products?categoryId=${categoryId}`).then((response) => {
-        setProducts(response.data)
-      })
-    } catch (error) {
+    axios.get(`http://localhost:3000/products?categoryId=${categoryId}`).then((response) => {
+      setProducts(response.data);
+    }).catch((error) => {
       console.log("error", error)
-    }
+    })
   }
 
   const handleChange = (e) => {
@@ -48,10 +47,8 @@ export const Home = (props) => {
       dispatch({
         type: "SAVE_PRODUCT_ID",
         data: {
-          id
+          id: selectedCategory
         }
-      }, () => {
-        console.log("dispatch hit")
       })
       props.history.push(`/details/${id}`)
     }).catch((error) => {
@@ -80,7 +77,7 @@ export const Home = (props) => {
         </div>
       </div>
       <div className="productsContainer">
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {products?.map((product, i) => {
             return <Grid item xs={12} sm={3} md={3} >
               {<ProductCard product={product} getProductDetails={(id) => { getProductDetails(id) }} />}
